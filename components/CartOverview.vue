@@ -1,15 +1,16 @@
 <template>
   <div class="cart-overview">
     <div class="cart-overview__container">
-      <Product v-for="product in getSelectedProducts()" :product=product />
-      <p class="cart-overview__no-items" v-if="getSelectedProducts().length === 0">No products in cart</p>
+      <Product v-for="product in cartProducts" :product="getProduct(product.id)" />
+      <p class="cart-overview__no-items" v-if="products.length === 0">No products in cart</p>
     </div>
   </div>
 
 </template>
 
 <script setup>
-  let [cartProducts, products] = [useCartProducts(), useProducts()];
+  let cartProducts = useCartProducts();
+  let products = useProducts()
 
   //client side only, get products form local storage
   if (process.client) {
@@ -23,7 +24,5 @@
     }
   ));
 
-  const isRemoved = (productId) => cartProducts.value.find(product => product.id == productId)?.amount === 0;
-
-  const getSelectedProducts = () => products.value.filter(product => !isRemoved(product.id));
+  function getProduct(productId) { return products.value.find(product => product.id === productId) };
 </script>

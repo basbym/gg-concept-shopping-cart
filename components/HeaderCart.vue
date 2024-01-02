@@ -21,7 +21,7 @@
 <script setup>
   import { ref } from 'vue';
   const [cartProducts, products] = [useCartProducts(), useProducts()];
-  let showCart = ref(false);
+  const showCart = ref(false);
 
   const openCart = () => {
     showCart.value = !showCart.value;

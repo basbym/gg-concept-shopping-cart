@@ -8,7 +8,8 @@
 </template>
 
 <script setup>
-  let [cartProducts, products] = [useCartProducts(), useProducts()];
+  let cartProducts = useCartProducts();
+  let products = useProducts();
 
   //Get all products from API
   products.value = await $fetch('https://fakestoreapi.com/products');

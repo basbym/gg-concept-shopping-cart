@@ -25,8 +25,8 @@
     margin-block-start: auto;
   }
 
-  // **** Note to CSS below ****
-  // I would prefer to create a new VUE element (for example CartOverviewProduct.vue) 
+  // **** Note for CSS below ****
+  // I'd prefer to create a new VUE element (for example CartOverviewProduct.vue) 
   // and semanticly build & style that new variation on that component for cleaner & more maintainable code
   // However, to illustrate a bit CSS selector knowledge, I chose to style a variation in this way
   .cart-overview & {
