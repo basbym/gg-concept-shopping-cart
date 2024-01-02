@@ -1,6 +1,6 @@
 # This project needs npm version 18 of higher
 
-run in command line:
+Run in command line:
 `nvm use 18`
 <br />
 <br />
@@ -50,8 +50,8 @@ npx cypress open
 > Start e2e testing in chrome
 
 > run `products.cy.js`
-<br />
-<br />
+> <br />
+> <br />
 
 # Nuxt 3 Minimal Starter
 
