@@ -1,17 +1,17 @@
 <template>
   <div class="header-cart">
-    <button @click=openCart() class="header-cart__button">
+    <button @click=toggleCart() class="header-cart__button">
       view cart
     </button>
     <div class="header-cart__cart-modal" v-if=showCart>
-      <button @click=openCart() class="header-cart__close">
+      <button @click=toggleCart() class="header-cart__close">
         close
       </button>
       <div class="header-cart__product" v-for="product in getCartProducts()">
         <MiniProduct :product=getProduct(product.id) :amount=product.amount /> 
       </div>
       <div v-if="getCartProducts().length === 0">No products in cart</div>
-      <NuxtLink to="/cart" class="header-cart__link">
+      <NuxtLink to="/cart" @click=toggleCart() class="header-cart__link">
         To shopping cart
       </NuxtLink>
     </div>
@@ -23,7 +23,7 @@
   const [cartProducts, products] = [useCartProducts(), useProducts()];
   const showCart = ref(false);
 
-  function openCart() {
+  function toggleCart() {
     showCart.value = !showCart.value;
   }
 
