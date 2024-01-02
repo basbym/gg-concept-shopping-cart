@@ -24,5 +24,7 @@
     }
   ));
 
-  function getProduct(productId) { return products.value.find(product => product.id === productId) };
+  function getProduct(productId) {
+    return products.value.find(product => product.id === productId)
+  };
 </script>

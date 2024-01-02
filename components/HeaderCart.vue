@@ -23,13 +23,15 @@
   const [cartProducts, products] = [useCartProducts(), useProducts()];
   const showCart = ref(false);
 
-  const openCart = () => {
+  function openCart() {
     showCart.value = !showCart.value;
   }
 
-  const getProduct = (id) => {
+  function getProduct(id) {
     return(products.value.find( product  => product.id == id ))
   }
 
-  const getCartProducts = () => cartProducts.value.filter(product => product.amount != 0)
+  function getCartProducts() {
+    return cartProducts.value.filter( product => product.amount != 0 )
+  }
 </script>
