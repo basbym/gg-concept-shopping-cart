@@ -1,4 +1,4 @@
-# This projet needs npm version 18 of higher
+# This project needs npm version 18 of higher
 
 run in command line:
 `nvm use 18`
