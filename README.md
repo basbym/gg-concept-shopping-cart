@@ -2,10 +2,8 @@
 
 run in command line:
 `nvm use 18`
-
-# Nuxt 3 Minimal Starter
-
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+<br />
+<br />
 
 ## Setup
 
@@ -18,6 +16,9 @@ Run in root of project:
 yarn install
 ```
 
+<br />
+<br />
+
 ## Development Server
 
 Start the development server on `http://localhost:3000`.
@@ -28,6 +29,9 @@ Run in root of project:
 # yarn
 yarn dev
 ```
+
+<br />
+<br />
 
 ## Cypress test
 
@@ -46,3 +50,9 @@ npx cypress open
 > Start e2e testing in chrome
 
 > run `products.cy.js`
+<br />
+<br />
+
+# Nuxt 3 Minimal Starter
+
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
