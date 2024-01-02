@@ -1,0 +1,27 @@
+.site-menu {
+  background-color:blanchedalmond;
+  padding: 2rem;
+
+  &__container {
+    max-width: 1300px;
+    margin-inline: auto;
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__item {
+    text-decoration: none;
+    
+    &:hover{
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px){
+      font-size: .8rem;
+    }
+  }
+
+  &__cart {
+    margin-left: auto;
+  }
+}

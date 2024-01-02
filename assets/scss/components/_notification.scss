@@ -1,0 +1,13 @@
+.notification{
+  background-color: aquamarine;
+  position: fixed;
+  bottom: 3rem;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 2rem;
+  border-radius: 1rem;
+
+  p {
+    color: darkred;
+  }
+}

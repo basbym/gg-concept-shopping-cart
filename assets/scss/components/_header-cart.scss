@@ -1,0 +1,36 @@
+.header-cart {
+  position: relative;
+
+  &__cart-modal {
+    top: calc(100% + 1rem);
+    position: absolute;
+    padding: 2rem;
+    right: 0;
+    width: 425px;
+    max-width: calc(100vw - 4rem);
+    border-radius: 1rem;
+    background-color: white;
+    border: solid 1px #bbb;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+  }
+
+  &__close {
+    align-self: flex-end;
+  }
+
+  &__product:not(:last-of-type) {
+    border-block-end: 1px solid #bbb;
+  }
+
+  &__link {
+    margin-inline: auto;
+    text-decoration: none;
+    margin-block-start: 1rem;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
