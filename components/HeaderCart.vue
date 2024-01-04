@@ -20,7 +20,8 @@
 
 <script setup>
   import { ref } from 'vue';
-  const [cartProducts, products] = [useCartProducts(), useProducts()];
+  const cartProducts = useCartProducts();
+  const products = useProducts();
   const showCart = ref(false);
 
   function toggleCart() {

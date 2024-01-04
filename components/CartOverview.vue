@@ -9,8 +9,8 @@
 </template>
 
 <script setup>
-  let cartProducts = useCartProducts();
-  let products = useProducts()
+  const cartProducts = useCartProducts();
+  const products = useProducts();
 
   //client side only, get products form local storage
   if (process.client) {

@@ -29,7 +29,7 @@
   function getProduct() { return cartProducts.value.find( product => product.id === props.id )};
   function isInCart() { return getProduct()?.amount >= 1 };
   const showNotification = ref(false);
-  let cartProducts = useCartProducts();
+  const cartProducts = useCartProducts();
 
   function triggerNotification () {
     showNotification.value = true;
